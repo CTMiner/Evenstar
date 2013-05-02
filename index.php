@@ -1,4 +1,6 @@
 <?php
+// Call settings
+require_once 'settings.php';
 // Get page
 $page = "";
 $request = "";
@@ -9,6 +11,8 @@ $callPage = "pages/" . $page . ".php";
 if(!file_exists($callPage)) { $page = "404"; $callPage = "pages/" . $page . ".php"; }
 // Load functions
 require_once 'functions.php';
+// Call theme actions
+require_once "themes/$theme/actions.php";
 // Call action.php files from plugins, where plugins register events
 $plugarr = array();
 $pluglist = scandir("plugins");
@@ -35,8 +39,8 @@ if($page=="404"&&$page!=strtolower($request)) {
         $callPage = "action";
     }
 }
-// Call settings
-require_once 'settings.php';
+// Set title content
+$title = ucwords($page) . " - " . $sitename;
 // Load theme, which manages content too
 require_once("themes/" . $theme . "/index.php");
 ?>
