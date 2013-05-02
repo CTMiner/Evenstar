@@ -1,0 +1,2 @@
+<h1>About Evenstar</h1>
+<p>So, I was on the Koding 'Activity' section, and did a poll to see what I should add to Aetherian, the coming soon database-based CMS. One of the responses was this:<br /><img src="resources/images/about-response.png" /><br /> I decided, "Hey, that would make a great base for Aetherian. And it would be fun to have a no DB CMS too." So, therefore I created this, Evenstar. PS: If you see me put 'Everstar' somewhere, I mean 'Evenstar'.</p>

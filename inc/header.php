@@ -1,0 +1,1 @@
+<a href="?page=home"><img src="resources/images/EvenstarBanner.png" width="1250" /></a>
