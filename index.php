@@ -8,7 +8,7 @@ if(!isset($_GET['page'])) { $page = "home"; $request = ""; }
 elseif ($_GET['page']=="index"||$_GET['page']=="") { $page = "home"; $request = ""; }
 else { $page = strtolower($_GET['page']); $request = $_GET['page']; }
 $callPage = "pages/" . $page . ".php";
-if(!file_exists($callPage)) { $page = "404"; $callPage = "pages/" . $page . ".php"; }
+if(!file_exists($callPage)) { $page = "404"; $callPage = "inc/" . $page . ".php"; }
 // Load functions
 require_once 'functions.php';
 // Call theme actions
@@ -35,8 +35,10 @@ foreach($plugarr as $plug)
 // Check is page is reserved and if so override sending to 404
 if($page=="404"&&$page!=strtolower($request)) {
     foreach($reservedPages as $resPage) {
-        $page = strtolower($request);
-        $callPage = "action";
+        if($resPage==strtolower($request)) {
+            $page = strtolower($request);
+            $callPage = "action";
+        }
     }
 }
 // Set title content
