@@ -7,6 +7,7 @@ $request = "";
 if(!isset($_GET['page'])) { $page = "home"; $request = ""; }
 elseif ($_GET['page']=="index"||$_GET['page']=="") { $page = "home"; $request = ""; }
 else { $page = strtolower($_GET['page']); $request = $_GET['page']; }
+$page = filter_var($page, FILTER_SANITIZE_ENCODED);
 $callPage = "pages/" . $page . ".php";
 if(!file_exists($callPage)) { $page = "404"; $callPage = "inc/" . $page . ".php"; }
 // Load functions
