@@ -3,7 +3,9 @@ body {
     color:white;
 }
 .header, .navbar, .content, .footer {
-    border: 1px solid navy;
+    border-top: 1px solid navy;
+    border-left: 1px solid navy;
+    border-right: 1px solid navy;
     background-color:black;
 }
 .header {
@@ -35,8 +37,11 @@ body {
     width:1220px;
     padding:0 15px 0 15px;
     margin:0 auto 0 auto;
+    border-bottom: 1px solid navy;
 }
 .footer {
+    border-top: 0;
+    border-bottom: 1px solid navy;
     width:1200px;
     padding:0 25px 0 25px;
     margin:0 auto 15px auto;
