@@ -3,10 +3,11 @@
 <head>
     <title><?php echo($title); ?></title>
     <link rel="stylesheet" type="text/css" href="themes/<?php echo($theme); ?>/style.css">
-    <?php /* doAction('loadCSS'); */
+    <?php
+    runEvent("cssStyles");
     if($jsLoc=="header") {
     echo("    <script type=\"text/javascript\" src=\"themes/$theme/scripts.js\"></script>");
-    /* doAction('LoadJS'); */
+    runEvent("jsScripts");
     } ?>
 </head>
 <body>
