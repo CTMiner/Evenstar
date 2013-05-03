@@ -1,6 +1,7 @@
 <h2>Approved Themes</h2>
 <ul>
     <li>Evenstar Navy (evenstar-navy) by CTMiner</li>
+    <li>Evenstar Sunset (evenstar-sunset) by CTMiner</li>
 </ul>
 <h2>Approved Plugins</h2>
 <ul>
