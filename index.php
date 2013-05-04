@@ -1,11 +1,12 @@
 <?php
 // Call settings
 require_once 'settings.php';
+require_once 'users.php';
 // Get page
 $page = "";
 $request = "";
-if(!isset($_GET['page'])) { $page = "home"; $request = ""; }
-elseif ($_GET['page']=="index"||$_GET['page']=="") { $page = "home"; $request = ""; }
+if(!isset($_GET['page'])) { $page = $defaultPage; $request = ""; }
+elseif ($_GET['page']=="index"||$_GET['page']=="") { $page = $defaultPage; $request = ""; }
 else { $page = strtolower($_GET['page']); $request = $_GET['page']; }
 $page = filter_var($page, FILTER_SANITIZE_ENCODED);
 $callPage = "pages/" . $page . ".php";

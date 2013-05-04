@@ -6,7 +6,7 @@ body {
     border-top: 1px solid navy;
     border-left: 1px solid navy;
     border-right: 1px solid navy;
-    background-color:black;
+    background-image:url('BG1.png');
 }
 .header {
     width:1250px;

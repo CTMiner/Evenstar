@@ -1,1 +1,1 @@
-Evenstar is a file-based CMS written by CTMiner
+Evenstar is a file-based CMS written by CTMiner - Platforms used: <a href="http://koding.com/">Koding</a>

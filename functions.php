@@ -7,8 +7,9 @@ $afterContent = array();
 $footer = array();
 $jsScripts = array();
 $cssStyles = array();
+$footerTxt = array();
 function newAction($event, $action) {
-    global $beforeLoad, $header, $beforeContent, $afterContent, $footer, $jsScripts, $cssStyles;
+    global $beforeLoad, $header, $beforeContent, $afterContent, $footer, $jsScripts, $cssStyles, $footerTxt;
     if($event=="beforeLoad") { array_push($beforeLoad, $action); }
     elseif($event=="header") { array_push($header, $action); }
     elseif($event=="beforeContent") { array_push($beforeContent, $action); }
@@ -16,14 +17,11 @@ function newAction($event, $action) {
     elseif($event=="footer") { array_push($footer, $action); }
     elseif($event=="jsScripts") { array_push($jsScripts, $action); }
     elseif($event=="cssStyles") { array_push($cssStyles, $action); }
+    elseif($event=="footerTxt") { array_push($footerTxt, $action); }
     else { return false; exit; }
 }
 function runEvent($event) {
-    global $beforeLoad;
-    global $header;
-    global $beforeContent;
-    global $afterContent;
-    global $footer;
+    global $beforeLoad, $header, $beforeContent, $afterContent, $footer, $jsScripts, $cssStyles, $footerTxt;
     if($event=="beforeLoad") { $loop = $beforeLoad; }
     elseif($event=="header") { $loop = $header; }
     elseif($event=="beforeContent") { $loop = $beforeContent; }
@@ -31,6 +29,7 @@ function runEvent($event) {
     elseif($event=="footer") { $loop = $footer; }
     elseif($event=="jsScripts") { $loop = $jsScripts; }
     elseif($event=="cssStyles") { $loop = $cssStyles; }
+    elseif($event=="footerTxt") { $loop = $footerTxt; }
     else { return false; exit; }
     foreach($loop as $action) {
         $action();
@@ -53,4 +52,15 @@ function getContent() {
     }
     else { require "$callPage"; }
 }
+/*
+function getUserInfo($username) {
+    
+}
+function getAllUserInfo() {
+    
+}
+function writeUserInfo() {
+    
+}
+*/
 ?>

@@ -12,6 +12,7 @@ getContent();
 runEvent("afterContent");
 echo("</div>\n<div class=\"footer\">");
 require 'inc/footer.php';
+runEvent("footerTxt");
 runEvent("footer");
 require_once "themes/$theme/footer.php";
 ?>
