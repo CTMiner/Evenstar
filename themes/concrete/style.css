@@ -1,0 +1,82 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
+.wrap {
+  margin:0 auto;
+	padding:0 auto;
+	width:840px;
+}
+
+body {
+	background-color:#F9F9F9;
+	color:#444;
+	font-size:16px;
+	font-family: 'Open Sans', sans-serif;
+  font-weight:300;
+}
+
+::-moz-selection {
+  background:#444;
+	color:#FFF;
+	text-shadow:none;
+}
+
+::selection {
+	background:#444;
+	color:#FFF;
+	text-shadow:none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight:300; }
+h1 {	font-size:30px; line-height:1.1; }
+h2 {	font-size:27px; line-height:1.2; }
+h3 {	font-size:24px; line-height:1.3; }
+h4 {	font-size:22px; line-height:1.4; }
+h5 {	font-size:20px; line-height:1.5; }
+h6 {	font-size:18px; line-height:1.6; }
+a {	color:#111; text-decoration:underline;outline: 0; }
+a:hover, a:focus {	color: #000; }
+p {		margin:0 0 22px 0; }
+em {	font-style:italic; }
+strong {	font-weight:bold; }
+hr {	border:solid #111; border-width:1px 0 0; clear:both; }
+ol,ul{list-style:none;}
+
+.title {
+	font-size:36px;
+  height:75px;
+  line-height:75px;
+}
+
+.motto {
+  font-size:18px;
+  color:#ccc;
+  float:right;
+  line-height:75px;
+}
+
+.navbar {
+	padding:1px;
+	background-color:#444;
+}
+
+.navbar a {
+  color:#F9F9F9;
+	text-decoration:none;
+}
+
+.navbar li {
+  display:inline;
+  margin-right:10px;
+}
+
+.navbar li:first-child {
+  margin-left:-10px;
+}
+.content {
+  margin:25px 0  25px 0;
+}
+.footer {
+	background-color:#F5F5F5;
+  padding:10px;
+}
