@@ -1,0 +1,21 @@
+body{
+	background-color:#7f007f;
+}
+.main{
+	margin-bottom:30px;
+	margin-top:60px;
+	background-color:#fff;
+    border-radius: 15px;
+}
+.content{
+    padding: 1px 25px 0 25px;
+}
+.footer{
+    padding: 0 25px 15px 25px;
+}
+.nav{
+	margin-bottom:20px;
+}
+.navbar .nav{
+	margin-bottom:0;
+}

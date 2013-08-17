@@ -44,7 +44,8 @@ if($page=="404"&&$page!=strtolower($request)) {
     }
 }
 // Set title content
-$title = ucwords($page) . " - " . $sitename;
+$pagename = get_mod_page_name($page);
+$title = $pagename . " - " . $sitename;
 // Load theme, which manages content too
 require_once("themes/" . $theme . "/index.php");
 ?>
