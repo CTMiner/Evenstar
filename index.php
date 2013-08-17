@@ -1,7 +1,6 @@
 <?php
 // Call settings
 require_once 'settings.php';
-require_once 'users.php';
 // Get page
 $page = "";
 $request = "";
