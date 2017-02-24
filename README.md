@@ -1,5 +1,7 @@
-Evenstar
+Evenstar (DISCONTINUED)
 ========
+
+*Has not been updated for at least 3 years.*
 
 Evenstar, a file-based CMS
 
